@@ -14,7 +14,7 @@
 }
 
 .pwa-install-button:hover {
-    background: #7554c8;
+    background: #1557cc;
 }
 
 .pwa-install-button:focus-visible {
@@ -35,7 +35,7 @@
 }
 
 .mobile-toggle:focus-visible {
-    outline: 3px solid #7554c8;
+    outline: 3px solid #1557cc;
     outline-offset: 3px;
 }
 

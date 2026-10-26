@@ -2,14 +2,14 @@
     --primary: #172a2b;
     --primary-light: #334a48;
     --primary-dark: #102021;
-    --secondary: #7554c8;
+    --secondary: #1557cc;
     --accent: #e97853;
     --text: #172a2b;
     --text-light: #5f6c66;
     --light: #f5f2eb;
     --white: #fff;
     --gradient: linear-gradient(135deg, #172a2b, #334a48);
-    --gradient-secondary: linear-gradient(135deg, #d9cff1, #f5f2eb);
+    --gradient-secondary: linear-gradient(135deg, #d7e5ff, #f5f2eb);
     --shadow: 0 12px 34px rgb(23 42 43 / 8%);
     --shadow-lg: 0 25px 60px rgb(23 42 43 / 14%);
     --radius: 16px;
@@ -97,7 +97,7 @@ header {
     border-radius: 22px;
     padding: clamp(34px, 7vw, 72px);
     background:
-        radial-gradient(ellipse at 90% 10%, rgb(117 84 200 / 34%), transparent 42%),
+        radial-gradient(ellipse at 90% 10%, rgb(21 87 204 / 34%), transparent 42%),
         #172a2b;
     color: #f5f2eb;
     box-shadow: var(--shadow-lg);
@@ -168,7 +168,7 @@ header {
 .modern-footer p, .modern-footer span, .modern-footer a {
     color: rgb(245 242 235 / 76%);
 }
-.modern-footer a:hover { color: #d9cff1; }
+.modern-footer a:hover { color: #d7e5ff; }
 .legal-links a { color: rgb(245 242 235 / 76%); }
 
 .pwa-install-button, .pwa-network-status { font-family: "DM Sans", system-ui, sans-serif; }
