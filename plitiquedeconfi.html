@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3942650991755175"
-     crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="7OCwSNaLeEeHm82sAVrKzi0jWCevcYh-05eiK_bEDfg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#f5f2eb">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self' https://formspree.io; upgrade-insecure-requests; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://formspree.io">
      <!--ajout de la balise meta de google-->
     <meta name="google-site-verification" content="cZZ4txGqafQCMCiIPdLiPmS_y7ndRMi0q3yXufSkchE" />
     <title>Politique de Confidentialité - IDA Cours</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="assettes/sdbsn.png">
+    <link rel="stylesheet" href="pwa.css">
     <style>
         /* ===== VARIABLES ET RESET ===== */
         :root {
@@ -744,6 +748,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="legal-pages.css">
 </head>
 <body>
     <!-- Header -->
@@ -754,9 +759,9 @@
                 <span class="logo-text">SDBSN Codes</span>
             </div>
             
-            <div class="mobile-toggle" id="mobileToggle">
+            <button class="mobile-toggle" id="mobileToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
@@ -1036,53 +1041,6 @@
         });
     </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Bloquer le clic droit
-    document.addEventListener('contextmenu', function(e) { e.preventDefault(); return false; });
-
-    // Bloquer copier/couper/coller
-    ['copy', 'cut', 'paste'].forEach(function(evt) {
-        document.addEventListener(evt, function(e) { e.preventDefault(); return false; });
-    });
-
-    // Bloquer la sélection de texte
-    document.addEventListener('selectstart', function(e) { e.preventDefault(); return false; });
-
-    // Bloquer le drag & drop d'images
-    document.addEventListener('dragstart', function(e) {
-        if (e.target.tagName === 'IMG') { e.preventDefault(); return false; }
-    });
-
-    // Bloquer toutes les touches F1 à F12 et autres combinaisons
-    document.addEventListener('keydown', function(e) {
-        // Bloquer touches F1 à F12
-        if (e.key.match(/^F[1-9]$|^F1[0-2]$/) || (e.keyCode >= 112 && e.keyCode <= 123)) {
-            e.preventDefault(); return false;
-        }
-        // Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+S, Ctrl+Alt+I, Ctrl+Alt+J, Ctrl+Alt+C
-        if (
-            (e.ctrlKey && e.key.toLowerCase() === 'u') ||
-            (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') ||
-            (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'c') ||
-            (e.ctrlKey && e.key.toLowerCase() === 's') ||
-            (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'i') ||
-            (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'j') ||
-            (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'c')
-        ) {
-            e.preventDefault(); return false;
-        }
-    });
-
-    // Détection DevTools par resize
-    setInterval(function() {
-        if (window.outerWidth - window.innerWidth > 160 ||
-            window.outerHeight - window.innerHeight > 160) {
-            document.body.innerHTML = '<h1 style="color:red;text-align:center;margin-top:20vh;">Accès restreint : DevTools détecté !</h1>';
-        }
-    }, 1000);
-});
-</script>
-
+<script src="pwa.js" defer></script>
 </body>
 </html>

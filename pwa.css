@@ -1,0 +1,62 @@
+.pwa-install-button {
+    position: fixed;
+    z-index: 1000;
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 18px;
+    background: #172a2b;
+    color: #fff;
+    box-shadow: 0 10px 30px rgb(23 42 43 / 24%);
+    font: 600 14px/1.2 system-ui, sans-serif;
+    cursor: pointer;
+}
+
+.pwa-install-button:hover {
+    background: #7554c8;
+}
+
+.pwa-install-button:focus-visible {
+    outline: 3px solid #e97853;
+    outline-offset: 3px;
+}
+
+.pwa-install-button:disabled {
+    cursor: wait;
+    opacity: .7;
+}
+
+.mobile-toggle {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 8px;
+}
+
+.mobile-toggle:focus-visible {
+    outline: 3px solid #7554c8;
+    outline-offset: 3px;
+}
+
+.pwa-install-button[hidden],
+.pwa-network-status[hidden] {
+    display: none;
+}
+
+.pwa-network-status {
+    position: fixed;
+    z-index: 1001;
+    right: 16px;
+    bottom: max(76px, calc(env(safe-area-inset-bottom) + 68px));
+    left: 16px;
+    max-width: 520px;
+    margin: 0 auto;
+    border: 1px solid #d8d4c9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #fff;
+    color: #172a2b;
+    box-shadow: 0 8px 24px rgb(23 42 43 / 12%);
+    font: 500 14px/1.5 system-ui, sans-serif;
+}

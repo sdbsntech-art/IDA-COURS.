@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3942650991755175"
-     crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="7OCwSNaLeEeHm82sAVrKzi0jWCevcYh-05eiK_bEDfg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#f5f2eb">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self' https://formspree.io; upgrade-insecure-requests; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https://formspree.io">
      <!--ajout de la balise meta de google-->
     <meta name="google-site-verification" content="cZZ4txGqafQCMCiIPdLiPmS_y7ndRMi0q3yXufSkchE" />
     <title>Conditions d'Utilisation - IDA Cours</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="assettes/sdbsn.png">
+    <link rel="stylesheet" href="pwa.css">
     <style>
         /* ===== VARIABLES ET RESET ===== */
         :root {
@@ -722,6 +726,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="legal-pages.css">
 </head>
 <body>
     <!-- Header -->
@@ -732,9 +737,9 @@
                 <span class="logo-text">SDBSN Codes</span>
             </div>
             
-            <div class="mobile-toggle" id="mobileToggle">
+            <button class="mobile-toggle" id="mobileToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             
             <nav class="nav-menu" id="navMenu">
                 <ul class="nav-list">
@@ -934,7 +939,6 @@
             </div>
         </div>
     </footer>
-<script src=""></script>
     <!-- Back to Top -->
     <div class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
@@ -987,28 +991,7 @@
             });
         });
 
-        // Animation au scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observer toutes les sections
-        document.querySelectorAll('.terms-section, .rule-card').forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(30px)';
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(element);
-        });
     </script>
+    <script src="pwa.js" defer></script>
 </body>
 </html>
