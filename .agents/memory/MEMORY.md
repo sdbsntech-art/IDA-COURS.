@@ -1,0 +1,1 @@
+- [Service worker cache versioning](service-worker-cache-versioning.md) — bump the shell cache version when its precache contents or offline response strategy changes.

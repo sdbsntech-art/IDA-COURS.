@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "sdbsn-codes-shell";
-const CACHE_NAME = `${CACHE_PREFIX}-v1`;
+const CACHE_NAME = `${CACHE_PREFIX}-v2`;
 const PRECACHE_FILES = [
     "./",
     "./index.html",
