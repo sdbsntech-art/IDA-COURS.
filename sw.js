@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "sdbsn-codes-shell";
-const CACHE_NAME = `${CACHE_PREFIX}-v2`;
+const CACHE_NAME = `${CACHE_PREFIX}-v3`;
 const PRECACHE_FILES = [
     "./",
     "./index.html",
@@ -16,6 +16,7 @@ const PRECACHE_FILES = [
     "./condiotion.htm",
     "./plitiquedeconfi.html",
     "./assettes/sdbsn.png",
+    "./assettes/apple-touch-icon.png",
     "./assettes/app-icon-192.png",
     "./assettes/app-icon-512.png"
 ];

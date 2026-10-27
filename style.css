@@ -5,8 +5,8 @@
     --ink: #172a2b;
     --ink-soft: #425351;
     --muted: #777e73;
-    --violet: #7554c8;
-    --violet-soft: #d9cff1;
+    --violet: #1557cc;
+    --violet-soft: #d7e5ff;
     --orange: #e97853;
     --line: #d8d4c9;
     --serif: "DM Serif Display", Georgia, serif;
@@ -140,7 +140,7 @@ img { display: block; max-width: 100%; }
 }
 .nav-cta span { color: var(--violet); font-size: 16px; }
 .nav-cta:hover { border-color: var(--ink); background: var(--ink); color: var(--paper); }
-.nav-cta:hover span { color: #d5b6ff; }
+.nav-cta:hover span { color: #a9c6ff; }
 .menu-toggle { display: none; }
 
 .hero {
@@ -151,7 +151,7 @@ img { display: block; max-width: 100%; }
     overflow: hidden;
     padding: 138px 0 94px;
     background:
-        radial-gradient(ellipse at 92% 14%, rgb(217 207 241 / 47%), transparent 25%),
+        radial-gradient(ellipse at 92% 14%, rgb(215 229 255 / 47%), transparent 25%),
         var(--paper);
 }
 .hero::after {
@@ -162,7 +162,7 @@ img { display: block; max-width: 100%; }
     height: 45vw;
     max-width: 700px;
     max-height: 700px;
-    border: 1px solid rgb(117 84 200 / 12%);
+    border: 1px solid rgb(21 87 204 / 12%);
     border-radius: 50%;
     content: "";
     pointer-events: none;
@@ -425,7 +425,7 @@ img { display: block; max-width: 100%; }
 .thanks { position: relative; overflow: hidden; background: var(--ink); color: var(--paper); }
 .thanks::before, .thanks::after {
     position: absolute;
-    border: 1px solid rgb(217 207 241 / 11%);
+    border: 1px solid rgb(215 229 255 / 13%);
     border-radius: 50%;
     content: "";
     pointer-events: none;
@@ -489,7 +489,7 @@ a.contact-detail:hover { color: var(--violet); }
 .form-field input { min-height: 47px; padding: 0 13px; }
 .form-field textarea { min-height: 116px; padding: 12px 13px; resize: vertical; }
 .form-field input::placeholder, .form-field textarea::placeholder { color: #99988e; }
-.form-field input:focus, .form-field textarea:focus { border-color: var(--violet); box-shadow: 0 0 0 3px rgb(117 84 200 / 13%); }
+.form-field input:focus, .form-field textarea:focus { border-color: var(--violet); box-shadow: 0 0 0 3px rgb(21 87 204 / 14%); }
 .form-submit { width: 100%; justify-content: space-between; cursor: pointer; }
 
 .site-footer { padding: 57px 0 0; background: var(--ink); color: var(--paper); }
